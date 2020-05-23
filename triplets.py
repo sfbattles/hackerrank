@@ -30,7 +30,6 @@ def input_list_of_numbers():
     while len(user) != 3:        
         user = list(input(f"Error only found {len(user)} valid numbers Enter only 3 integers separated by a space -->").split())    
         user = list(map(int,[ x for x in user if x.isdigit() and int(x) <= 100 and int(x) >= 0 ]))
-    print(user)
     return(user)
 
 user1 = input_list_of_numbers()
