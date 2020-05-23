@@ -12,3 +12,4 @@ def diagonalDifference(arr):
             if i + j == len(arr) - 1:   #sum of indecies = len(matrix - 1)
                 r_to_l_diagonal += arr[i][j]
     return abs(l_to_r_diagonal - r_to_l_diagonal)
+
